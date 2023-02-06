@@ -2,8 +2,8 @@ import framework.*;
 
 public class Main {
     public static void main(String[] args) {
-        Node root = new RepeatUntilNode(NodeStatus.FAILURE, mainSequenceNode());
-        root.tick();
+        BehaviourTree tree = new BehaviourTree(new RepeatUntilNode(NodeStatus.FAILURE, mainSequenceNode()));
+        tree.tick();
     }
 
     public static SequenceNode mainSequenceNode() {

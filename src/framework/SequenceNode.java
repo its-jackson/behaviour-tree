@@ -23,4 +23,3 @@ public class SequenceNode implements Node {
         return NodeStatus.SUCCESS;
     }
 }
-
