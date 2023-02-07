@@ -16,8 +16,8 @@ public class SequenceNode implements Node {
             if (status == NodeStatus.FAILURE) {
                 return NodeStatus.FAILURE;
             }
-            if (status == NodeStatus.RUNNING) {
-                return NodeStatus.RUNNING;
+            if (status == NodeStatus.KILL) {
+                return NodeStatus.KILL;
             }
         }
         return NodeStatus.SUCCESS;

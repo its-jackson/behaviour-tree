@@ -1,7 +1,7 @@
 package framework;
 
 public enum NodeStatus {
-    RUNNING,
+    FAILURE,
     SUCCESS,
-    FAILURE
+    KILL
 }

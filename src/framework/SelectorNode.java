@@ -16,8 +16,8 @@ public class SelectorNode implements Node {
             if (status == NodeStatus.SUCCESS) {
                 return NodeStatus.SUCCESS;
             }
-            if (status == NodeStatus.RUNNING) {
-                return NodeStatus.RUNNING;
+            if (status == NodeStatus.KILL) {
+                return NodeStatus.KILL;
             }
         }
         return NodeStatus.FAILURE;

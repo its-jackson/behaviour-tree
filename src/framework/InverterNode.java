@@ -35,6 +35,6 @@ public class InverterNode implements Node {
             }
         }
 
-        return NodeStatus.RUNNING;
+        return NodeStatus.KILL;
     }
 }
